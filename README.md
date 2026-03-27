@@ -6,23 +6,6 @@ Este proyecto está construido siguiendo una **Clean Architecture** bien definid
 
 ---
 
-## Tabla de contenido
-
-- [Descripción general](#descripción-general)
-- [Objetivo del proyecto](#objetivo-del-proyecto)
-- [Características principales](#características-principales)
-- [Arquitectura](#arquitectura)
-- [Capas del proyecto](#capas-del-proyecto)
-- [Estructura funcional por features](#estructura-funcional-por-features)
-- [Flujo de datos](#flujo-de-datos)
-- [Pantallas y navegación](#pantallas-y-navegación)
-- [Reglas de negocio implementadas](#reglas-de-negocio-implementadas)
-- [Persistencia y fuente de datos](#persistencia-y-fuente-de-datos)
-- [Seguridad transaccional](#seguridad-transaccional)
-- [Gestión de estado](#gestión-de-estado)
-
----
-
 ## Descripción general
 
 La aplicación permite gestionar un portafolio de fondos de inversión de forma simple y controlada. El sistema parte de un saldo inicial en pesos colombianos y ofrece una lista fija de fondos disponibles para invertir. Cada operación actualiza el estado persistido localmente y registra una transacción para consulta posterior.
