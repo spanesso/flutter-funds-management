@@ -4,6 +4,19 @@ Aplicación móvil desarrollada en **Flutter** para la gestión de fondos de inv
 
 Este proyecto está construido siguiendo una **Clean Architecture** bien definida, con separación estricta de responsabilidades entre presentación, dominio, datos y fuente de datos, además de un núcleo compartido para errores, utilidades y objetos de valor.
 
+
+<table width="100%">
+  <tr>
+    <td width="60%" align="center">
+      <img src="media/clean_arch.png" alt="Architecture Diagram" style="width:100%;"/>
+    </td>
+    <td width="40%" align="center">
+      <img src="media/recording.gif" alt="App Demo" style="width:100%;"/>
+    </td>
+  </tr>
+</table>
+
+
 ---
 
 ## Descripción general
