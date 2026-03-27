@@ -20,9 +20,6 @@ Este proyecto está construido siguiendo una **Clean Architecture** bien definid
 - [Persistencia y fuente de datos](#persistencia-y-fuente-de-datos)
 - [Seguridad transaccional](#seguridad-transaccional)
 - [Gestión de estado](#gestión-de-estado)
-- [Buenas prácticas aplicadas](#buenas-prácticas-aplicadas)
-- [Áreas de mejora](#áreas-de-mejora)
-- [Resumen arquitectónico](#resumen-arquitectónico)
 
 ---
 
