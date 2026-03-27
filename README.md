@@ -75,37 +75,6 @@ El proyecto implementa **Clean Architecture** con **4 capas explícitas** y una 
 - **Patrón Result para control funcional de errores**
 - **Patrón Decorator en seguridad transaccional**
 
-### Vista conceptual
-
-```text
-PRESENTATION
-  ├── Pages
-  ├── Controllers / StateNotifiers
-  └── Providers
-
-DOMAIN
-  ├── Entities
-  ├── UseCases
-  ├── Repository Contracts
-  └── Security Services
-
-DATA
-  ├── Models / DTOs
-  ├── Mappers
-  ├── Repository Implementations
-  └── Decorators
-
-DATASOURCE
-  └── MockDatasource + SharedPreferences
-
-CORE
-  ├── Errors
-  ├── Result<T>
-  ├── Constants
-  ├── Utils
-  └── Value Objects
-```
-
 ---
 
 ## Capas del proyecto
@@ -347,45 +316,6 @@ Administra el historial de movimientos.
 #### Responsabilidad
 Registrar y consultar transacciones, validando integridad y evitando duplicados.
 
----
-
-## Flujo de datos
-
-A continuación se resume el flujo completo de una suscripción:
-
-```text
-UI
- └── SubscriptionController.subscribe()
-
-Presentation
- └── Invoca caso de uso SubscribeToFund
-
-Domain
- ├── Valida monto > 0
- ├── Valida que el fondo exista
- ├── Valida monto mínimo
- ├── Valida saldo suficiente
- ├── Valida que no exista suscripción duplicada
- ├── Crea suscripción
- ├── Debita saldo
- └── Registra transacción
-
-Data
- ├── Repositorios concretos
- └── Decorador de seguridad para transacciones
-
-Datasource
- └── Persistencia en SharedPreferences
-```
-
-### Resultado final del flujo
-
-- Se actualiza la suscripción
-- Se actualiza la billetera
-- Se registra la transacción
-- La UI recibe estado de éxito
-- Se refrescan providers afectados
-- La pantalla retorna al flujo anterior
 
 ---
 
