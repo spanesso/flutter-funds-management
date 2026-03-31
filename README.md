@@ -1,5 +1,7 @@
 # Investment Funds Management App
 
+# https://flutter-funds-management.netlify.app/
+
 Aplicación móvil desarrollada en **Flutter** para la gestión de fondos de inversión, orientada a un escenario de usuario único con operaciones sobre saldo disponible, suscripciones a fondos, cancelaciones de participaciones e historial transaccional.
 
 Este proyecto está construido siguiendo una **Clean Architecture** bien definida, con separación estricta de responsabilidades entre presentación, dominio, datos y fuente de datos, además de un núcleo compartido para errores, utilidades y objetos de valor.
